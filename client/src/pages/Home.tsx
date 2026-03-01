@@ -2,8 +2,15 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Mail, Linkedin, Github, ExternalLink, Code2, Cloud, Zap } from "lucide-react";
 import { useState } from "react";
+import { SEO } from "@/components/SEO";
 
 export default function Home() {
+  const seoProps = {
+    title: 'Hemanth Kumar - Senior DevOps & Cloud Engineer | Portfolio',
+    description: 'Discover Hemanth Kumar Talluri\'s portfolio. 9+ years of DevOps and cloud engineering expertise. Specialized in AWS, Azure, Kubernetes, CI/CD automation, and infrastructure management.',
+    canonical: 'https://hemanth.tech/',
+    ogImage: 'https://hemanth.tech/og-image.jpg'
+  };
   const [activeTab, setActiveTab] = useState<"experience" | "skills" | "projects">("experience");
 
   const experiences = [
@@ -107,6 +114,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO {...seoProps} />
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
         <div className="container py-4 flex items-center justify-between">
