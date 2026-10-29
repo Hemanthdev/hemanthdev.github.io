@@ -15,6 +15,16 @@ export default function Home() {
 
   const experiences = [
     {
+      title: "Senior Software Engineer",
+      company: "TechBlocks",
+      period: "Apr 2026 – Present · Remote",
+      highlights: [
+        "Managed deployment pipelines across AWS, Azure, and GCP, ensuring seamless integration and delivery",
+        "Handled Kubernetes deployments, optimizing the management of containerized applications",
+        "Developed and deployed offline C applications, enhancing operational efficiency"
+      ]
+    },
+    {
       title: "DevOps Engineer",
       company: "ELP Aviation LLC",
       period: "Dec 2021 – Feb 2026",
@@ -142,7 +152,7 @@ export default function Home() {
               DevOps Engineer & Cloud Architect
             </h1>
             <p className="text-body-lg text-muted-foreground mb-8 max-w-2xl">
-              9+ years of experience designing and operating scalable cloud infrastructure across AWS and Azure. 
+              Senior Software Engineer at TechBlocks. 9+ years of experience designing and operating scalable cloud infrastructure across AWS, Azure, and GCP.
               Specialized in CI/CD automation, Kubernetes platform engineering, and DevSecOps practices.
             </p>
             <div className="flex gap-4 flex-wrap">
